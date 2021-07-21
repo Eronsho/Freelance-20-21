@@ -1,0 +1,14 @@
+<?php if( have_rows('swiper-slide') ):
+while ( have_rows('swiper-slide') ) : the_row();?>
+<div class="swiper-slide">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-wrap-1.png" alt="" />
+            </div>
+
+
+<?php  endwhile;
+
+else : endif; ?><img
+      src="<?php the_sub_field('advantages__logo'); ?>"
+      alt=""
+      class="advantages__logo"
+    />
